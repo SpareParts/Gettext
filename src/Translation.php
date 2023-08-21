@@ -23,7 +23,7 @@ class Translation
     protected $previousOriginal;
     protected $previousPlural;
 
-    public static function create(?string $context, string $original): Translation
+    public static function create(?string $context, string $original): static
     {
         $id = static::generateId($context, $original);
 
